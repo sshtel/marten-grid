@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016. 4. 21, 오후 3:32:32
+    Author     : sshtel
+*/
+
+.mt-Title {
+    border: 1px cornflowerblue;    
+    color: darkorchid;
+}
+
+.mt-Table {
+    
+    border-spacing: 0px;
+    border-collapse:  collapse;
+}
+
+.mt-Header {
+    border: 1px solid cornflowerblue;
+    font-weight: bold;
+    text-align: center;
+    text-align: center;
+    font-size: 20px
+}
+
+.mt-Rows {
+    border: 1px solid gray;
+    color: midnightblue;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-spacing: 0;
+
+}
+
+
+.mt-FirstRow{
+    border: 1px solid gray;
+    color: indigo;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-spacing: 0;
+
+}
