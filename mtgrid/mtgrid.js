@@ -151,7 +151,7 @@ function tableManager(){
         
         var rows ="";
         $.ajax({
-            url: "rows.jsp",
+            url: "/data.js",
             type: "post",
             dataType: "json",
             async: false,
