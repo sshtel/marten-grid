@@ -13,6 +13,16 @@ function getHtmlHeadCode(tableData){
     buffer.push("</head>\n");
     return buffer.join("");
 }
+
+function getTitleCode(tableData){
+    var buffer = [];
+    buffer.push("<center><h1>");
+    buffer.push(tableData.gridParams.title);
+    buffer.push("</h1></center>");
+    buffer.push("<br>");
+    return buffer.join("");
+}
+
 function getHeaderCode(tableData) {
     if(!tableData) return null;
     var headerData = tableData.header;
@@ -132,6 +142,7 @@ function tableManager(){
         var buffer = [];
         var gridParams = tableData.gridParams;
         buffer.push(getHtmlHeadCode(tableData));
+        buffer.push(getTitleCode(tableData));
         buffer.push("<table");
         buffer.push(" width='" + gridParams.tableSize.width + "'");
         buffer.push(" height='" + gridParams.tableSize.height + "'");
@@ -151,7 +162,7 @@ function tableManager(){
         
         var rows ="";
         $.ajax({
-            url: "/data.js",
+            url: gridParams.url,
             type: "post",
             dataType: "json",
             async: false,
